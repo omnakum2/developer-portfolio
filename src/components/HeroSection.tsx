@@ -29,7 +29,7 @@ export const HeroSection = () => {
     const initTyped = () => {
       if (window.Typed && typedElementRef.current) {
         new window.Typed(typedElementRef.current, {
-          strings: [personal.title, personal.title_2],
+          strings: [personal.title_1, personal.title_2, personal.title_3],
           typeSpeed: 80,
           backSpeed: 80,
           loop: true,
@@ -42,7 +42,7 @@ export const HeroSection = () => {
     if (window.Typed) {
       initTyped();
     }
-  }, [personal.title, personal.title_2]);
+  }, [personal.title_1, personal.title_2, personal.title_3]);
 
   return (
     <section

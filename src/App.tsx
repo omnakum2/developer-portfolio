@@ -1,27 +1,25 @@
-import Navigation from '@/components/Navigation';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Layout } from "@/components/Layout";
+import { Home } from "@/pages/Home";
+import { NotFound } from "@/pages/NotFound";
 
-import { HeroSection } from './components/HeroSection';
-import { AboutSection } from './components/AboutSection';
-import { SkillsSection } from './components/SkillsSection';
-import { ServicesSection } from './components/ServicesSection';
-import { PortfolioSection } from './components/PortfolioSection';
-import { ContactSection } from './components/ContactSection';
-import { Footer } from './components/Footer';
-
+/**
+ * Main App component with routing configuration
+ * Sets up React Router with home page and 404 fallback
+ * NotFound page is standalone without header/footer
+ */
 function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navigation />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <SkillsSection />
-        <ServicesSection />
-        <PortfolioSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={
+          <Layout>
+            <Home />
+          </Layout>
+        } />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 }
 

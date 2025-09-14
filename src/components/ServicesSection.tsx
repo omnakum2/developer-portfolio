@@ -1,5 +1,6 @@
-import { HiColorSwatch, HiLightBulb, HiArrowRight, HiCheck } from 'react-icons/hi';
+import { HiLightBulb, HiArrowRight, HiCheck, HiCode } from 'react-icons/hi';
 import portfolioData from '@/data/portfolio.json';
+import { FaLaptopCode } from 'react-icons/fa';
 
 /**
  * Services section component displaying offered services
@@ -10,10 +11,10 @@ export const ServicesSection = () => {
 
   const getServiceIcon = (iconName: string) => {
     const iconMap: Record<string, JSX.Element> = {
-      'palette': <HiColorSwatch className="h-8 w-8" />,
+      'palette': <FaLaptopCode className="h-8 w-8" />,
       'lightbulb': <HiLightBulb className="h-8 w-8" />,
     };
-    return iconMap[iconName] || <HiColorSwatch className="h-8 w-8" />;
+    return iconMap[iconName] || <HiCode className="h-8 w-8" />;
   };
 
   const scrollToContact = () => {
@@ -75,15 +76,6 @@ export const ServicesSection = () => {
                     ))}
                   </ul>
                 </div>
-
-                {/* CTA Button */}
-                <button
-                  onClick={scrollToContact}
-                  className="flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-full mt-6 bg-primary text-primary-foreground hover:bg-primary/90 group-hover:scale-105 transition-smooth h-10 px-4 py-2"
-                >
-                  Get Started
-                  <HiArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </button>
               </div>
             </div>
           ))}

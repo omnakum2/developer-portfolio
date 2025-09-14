@@ -14,9 +14,9 @@ export const Footer = () => {
   };
 
   const socialLinks = [
+    { icon: HiMail, href: `mailto:${contact.email}`, label: 'Email' },
     { icon: FaGithub, href: contact.social.github, label: 'GitHub' },
     { icon: FaLinkedin, href: contact.social.linkedin, label: 'LinkedIn' },
-    { icon: HiMail, href: `mailto:${contact.email}`, label: 'Email' },
   ];
 
   const currentYear = new Date().getFullYear();
@@ -31,7 +31,7 @@ export const Footer = () => {
               {personal.name}
             </h3>
             <p className="text-muted-foreground">
-              {personal.title}
+              {personal.title_1}
             </p>
           </div>
 

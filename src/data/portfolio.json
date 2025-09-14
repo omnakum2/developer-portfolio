@@ -1,49 +1,36 @@
 {
   "personal": {
-    "name": "Jon Doe Alex",
-    "title": "Full-Stack Developer",
-    "title_2": "Code as craft and logic as art",
+    "name": "Om Nakum",
+    "title_1": "Full-Stack Developer.",
+    "title_2": "Code As Craft.",
+    "title_3": "Logic As Art.",
     "tagline": "Full-stack developer passionate about solving real-world problems with Node.js, React, and modern web technologies.",
-    "bio": "Passionate full-stack developer with expertise in Node.js, Nest.js, and React. I love solving complex problems through technology and building scalable, efficient, and user-friendly digital solutions that make a real difference.",
+    "bio": "Passionate full-stack developer with expertise in Node.js and React. I love solving complex problems through technology and building scalable, efficient, and user-friendly digital solutions that make a real difference. Beyond coding, I enjoy bringing ideas to life by turning concepts into polished experiences that people love to use. I’m always curious, learning new tools and technologies to stay ahead, and excited to take on challenges that push my creativity and technical skills further.",
     "profileImage": "/profile.webp",
-    "location": "Tech Hub City",
-    "email": "jon@gmail.com",
-    "phone": "+91 9787554322",
-    "github": "jondoe2",
-    "linkedin": "jonlinkdoe",
-    "website": "https://jondoealex.dev"
+    "email": "omnakum2@gmail.com",
+    "github": "omnakum2",
+    "linkedin": "om-nakum-959109299",
+    "website": "https://omnakum2.dev"
   },
   "education": [
     {
-      "level": "10th",
-      "institution": "Dummy Institution",
-      "year": "2000",
-      "type": "secondary"
-    },
-    {
-      "level": "12th", 
-      "institution": "Dummy Institution",
-      "year": "2002",
-      "type": "higher-secondary"
-    },
-    {
-      "level": "Graduation",
-      "institution": "XYZ, Dummy Institution",
-      "year": "2005",
+      "level": "BCA • Bachelor of Computer Applications",
+      "institution": "Saurashtra University, Rajkot",
+      "year": "2023",
       "type": "undergraduate"
     },
     {
-      "level": "Post Graduation",
-      "institution": "ABC, Dummy Institution", 
-      "year": "2007",
+      "level": "MCA • Master of Computer Applications",
+      "institution": "Gujarat Technological University, Ahmedabad",
+      "year": "2025",
       "type": "postgraduate"
     }
   ],
   "experience": [
     {
       "position": "Full-Stack Developer",
-      "company": "Tech Z",
-      "duration": "2007 – Present",
+      "company": "Code Symphony LLP",
+      "joiningYear": "2024",
       "type": "full-time",
       "description": "Leading full-stack development projects, building scalable web applications, and mentoring junior developers."
     }
@@ -74,24 +61,29 @@
     ],
     "additional": [
       {
-        "name": "PHP",
-        "level": 80,
-        "icon": "php"
-      },
-      {
-        "name": "Java",
-        "level": 75,
-        "icon": "java"
-      },
-      {
         "name": "TypeScript",
         "level": 85,
         "icon": "typescript"
       },
       {
-        "name": "Docker",
-        "level": 78,
-        "icon": "docker"
+        "name": "PHP",
+        "level": 50,
+        "icon": "php"
+      },
+      {
+        "name": "AWS",
+        "level": 70,
+        "icon": "aws"
+      },
+      {
+        "name": "Java",
+        "level": 45,
+        "icon": "java"
+      },
+      {
+        "name": "MUI",
+        "level": 75,
+        "icon": "mui"
       }
     ]
   },
@@ -108,7 +100,7 @@
       ]
     },
     {
-      "title": "Tech Guidance (Consultancy)",
+      "title": "Tech Consultancy",
       "description": "Strategic advice for digital transformation and scalable solutions",
       "icon": "lightbulb",
       "features": [
@@ -122,43 +114,45 @@
   "projects": {
     "academic": [
       {
-        "name": "POS Web",
-        "description": "Laravel + Bootstrap web POS with product/category management and billing",
+        "name": "Inventory + POS Web",
+        "description": "Laravel + Bootstrap web POS with user, product, category masters and billing management.",
         "techStack": ["Laravel", "Bootstrap", "MySQL", "PHP"],
         "category": "E-commerce",
         "image": "/project-pos.jpg",
         "features": [
-          "Product Management",
-          "Category Management", 
+          "User Management",
+          "Product + Category Management",
           "Billing System",
           "Inventory Tracking"
-        ]
+        ],
+        "githubUrl": "https://github.com/omnakum2/Inventory"
       },
       {
         "name": "Food Court",
-        "description": "Node.js + React.js restaurant menu app with QR code integration",
+        "description": "Node.js + React.js restaurant menu app with admin panel and QR code integration.",
         "techStack": ["Node.js", "React.js", "MongoDB", "QR Codes"],
         "category": "Restaurant",
         "image": "/project-foodcourt.jpg",
         "features": [
           "Digital Menu",
           "QR Code Integration",
-          "Order Management",
+          "Admin Panel",
           "Real-time Updates"
-        ]
+        ],
+        "githubUrl": "https://github.com/omnakum2/Resto"
       }
     ],
     "company": [
       {
         "name": "ERP Solutions for Brass Industry",
-        "description": "React.js + Nest.js ERP with HR, PO, and quotation modules",
-        "techStack": ["React.js", "Nest.js", "PostgreSQL", "TypeScript"],
+        "description": "React.js + Nest.js ERP with HR, PO, and quotation modules.",
+        "techStack": ["React.js", "Nest.js", "MySQL", "TypeScript", "AWS"],
         "category": "Enterprise",
         "image": "/project-erp.jpg",
         "status": "Live",
         "features": [
-          "HR Management",
           "Purchase Orders",
+          "HR Management",
           "Quotation System",
           "Reporting Dashboard"
         ]
@@ -166,11 +160,10 @@
     ]
   },
   "contact": {
-    "email": "jon@gmail.com",
-    "phone": "+91 9787554322",
+    "email": "omnakum2@gmail.com",
     "social": {
-      "github": "https://github.com/jondoe2",
-      "linkedin": "https://linkedin.com/in/jonlinkdoe"
+      "github": "https://github.com/omnakum2",
+      "linkedin": "https://linkedin.com/in/om-nakum-959109299"
     },
     "availability": "Available for freelance projects and consultations"
   }

@@ -1,5 +1,8 @@
-import { HiCode, HiDatabase, HiGlobe, HiViewGrid } from 'react-icons/hi';
+import { HiCode } from 'react-icons/hi';
 import portfolioData from '@/data/portfolio.json';
+import { BiLogoTypescript } from 'react-icons/bi';
+import { FaAws, FaJava, FaNodeJs, FaPhp, FaReact } from 'react-icons/fa';
+import { SiMui, SiMysql, SiNestjs } from 'react-icons/si';
 
 /**
  * Skills section component showcasing technical expertise
@@ -11,14 +14,15 @@ export const SkillsSection = () => {
   // Icon mapping for different skill categories
   const getSkillIcon = (skillName: string) => {
     const iconMap: Record<string, JSX.Element> = {
-      'nodejs': <HiDatabase className="h-6 w-6" />,
-      'nestjs': <HiViewGrid className="h-6 w-6" />,
-      'react': <HiGlobe className="h-6 w-6" />,
-      'mysql': <HiDatabase className="h-6 w-6" />,
-      'php': <HiCode className="h-6 w-6" />,
-      'java': <HiCode className="h-6 w-6" />,
-      'typescript': <HiCode className="h-6 w-6" />,
-      'docker': <HiViewGrid className="h-6 w-6" />,
+      'nodejs': <FaNodeJs className="h-6 w-6" />,
+      'nestjs': <SiNestjs className="h-6 w-6" />,
+      'react': <FaReact className="h-6 w-6" />,
+      'mysql': <SiMysql className="h-6 w-6" />,
+      'typescript': <BiLogoTypescript className="h-6 w-6" />,
+      'php': <FaPhp className="h-6 w-6" />,
+      'aws': <FaAws className="h-6 w-6" />,
+      'java': <FaJava className="h-6 w-6" />,
+      'mui': <SiMui className="h-6 w-6" />,
     };
     return iconMap[skillName.toLowerCase()] || <HiCode className="h-6 w-6" />;
   };
@@ -72,11 +76,8 @@ export const SkillsSection = () => {
           {/* Secondary Skills */}
           <div className="lg:col-span-2 space-y-8">
             <div className="animate-fade-in-right">
-              <h3 className="font-heading text-2xl font-semibold text-foreground mb-6">
-                Core Technologies
-              </h3>
               <div className="grid md:grid-cols-2 gap-6">
-                {skills.secondary.map((skill, index) => (
+                {skills.secondary.map((skill) => (
                   <div key={skill.name} className="rounded-lg border bg-card text-card-foreground shadow-sm card-elevated hover-lift">
                     <div className="p-6">
                       <div className="flex items-center mb-4">
@@ -103,9 +104,10 @@ export const SkillsSection = () => {
                 ))}
               </div>
             </div>
-
+          </div>
+          
             {/* Additional Skills */}
-            <div className="animate-fade-in">
+            <div className="lg:col-span-3 animate-fade-in">
               <h3 className="font-heading text-2xl font-semibold text-foreground mb-6">
                 Additional Technologies
               </h3>
@@ -127,7 +129,6 @@ export const SkillsSection = () => {
                 ))}
               </div>
             </div>
-          </div>
         </div>
       </div>
     </section>

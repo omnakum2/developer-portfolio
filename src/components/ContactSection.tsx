@@ -1,7 +1,6 @@
-import { useState } from 'react';
-import { HiMail, HiPhone, HiLocationMarker, HiPaperAirplane, HiClock } from 'react-icons/hi';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import portfolioData from '@/data/portfolio.json';
+import { HiMail, HiLocationMarker, HiClock } from "react-icons/hi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import portfolioData from "@/data/portfolio.json";
 
 /**
  * Contact section component with contact information and form
@@ -9,18 +8,19 @@ import portfolioData from '@/data/portfolio.json';
  */
 export const ContactSection = () => {
   const { contact } = portfolioData;
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const contactInfo = [
     { icon: HiMail, text: contact.email, href: `mailto:${contact.email}` },
-    { icon: HiPhone, text: contact.phone, href: `tel:${contact.phone}` },
-    { icon: FaGithub, text: contact.social.github.replace('https://github.com/', ''), href: contact.social.github },
-    { icon: FaLinkedin, text: contact.social.linkedin.replace('https://linkedin.com/in/', ''), href: contact.social.linkedin },
+    {
+      icon: FaGithub,
+      text: "Explore My Projects",
+      href: contact.social.github,
+    },
+    {
+      icon: FaLinkedin,
+      text: "Network with Me",
+      href: contact.social.linkedin,
+    },
   ];
 
   return (
@@ -31,25 +31,30 @@ export const ContactSection = () => {
             Get In <span className="text-primary">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to start your next project? Let's discuss how I can help bring your ideas to life.
+            Ready to start your next project? Let's discuss how I can help bring
+            your ideas to life.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 gap-12 w-full">
           {/* Contact Information */}
           <div className="animate-fade-in-left space-y-6">
             <h3 className="font-heading text-2xl font-semibold text-foreground mb-8">
               Contact Information
             </h3>
 
-            {/* Contact Cards */}
-            <div className="space-y-4">
+            {/* Contact Cards Row */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {contactInfo.map((info, index) => (
                 <a
                   key={index}
                   href={info.href}
-                  target={info.href.startsWith('http') ? '_blank' : undefined}
-                  rel={info.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  target={info.href.startsWith("http") ? "_blank" : undefined}
+                  rel={
+                    info.href.startsWith("http")
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
                   className="rounded-lg border bg-card text-card-foreground shadow-sm card-elevated hover-lift group transition-smooth block"
                 >
                   <div className="p-6">
@@ -68,12 +73,14 @@ export const ContactSection = () => {
               ))}
             </div>
 
-            {/* Availability */}
-            <div className="rounded-lg border bg-card text-card-foreground shadow-sm card-elevated mt-8">
+            {/* Availability - Full Width */}
+            <div className="rounded-lg border bg-card text-card-foreground shadow-sm card-elevated mt-8 w-full">
               <div className="p-6">
                 <div className="flex items-center mb-4">
                   <HiLocationMarker className="h-5 w-5 text-accent mr-2" />
-                  <h4 className="font-semibold text-foreground">Location & Availability</h4>
+                  <h4 className="font-semibold text-foreground">
+                    Location & Availability
+                  </h4>
                 </div>
                 <div className="space-y-2 text-muted-foreground">
                   <div className="flex items-center">
@@ -81,8 +88,9 @@ export const ContactSection = () => {
                     <span>Available for remote work</span>
                   </div>
                   <p className="text-sm">
-                    I'm currently available for new projects and consulting opportunities. 
-                    Let's discuss how I can help you achieve your goals.
+                    I'm currently available for new projects and consulting
+                    opportunities. Let's discuss how I can help you achieve your
+                    goals.
                   </p>
                 </div>
               </div>

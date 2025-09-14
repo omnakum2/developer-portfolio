@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
+import portfolioData from '@/data/portfolio.json';
 
 /**
  * Navigation component with responsive mobile menu
  * Features smooth scrolling to sections and active state tracking
  */
-const Navigation = () => {
+export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const { personal } = portfolioData;
 
   const navItems = [
     { id: 'home', label: 'Home' },
@@ -54,7 +56,7 @@ const Navigation = () => {
               onClick={() => scrollToSection('home')}
               className="font-heading font-bold text-xl text-primary hover:text-primary/80 transition-smooth"
             >
-              Jon Doe Alex
+              {personal.name}
             </button>
           </div>
 
@@ -112,5 +114,3 @@ const Navigation = () => {
     </nav>
   );
 };
-
-export default Navigation;
