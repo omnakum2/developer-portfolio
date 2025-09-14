@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Jon Doe Alex Portfolio - Dark Mode Developer Aesthetic
+Modern portfolio design system with charcoal background and mustard accents
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark portfolio color scheme */
+    --background: 222 84% 4.9%; /* Charcoal Black #0F172A */
+    --foreground: 210 40% 98%; /* Light text */
+
+    --card: 215 28% 17%; /* Darker card background */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 215 28% 17%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 45 93% 47%; /* Mustard Yellow #EAB308 */
+    --primary-foreground: 222 84% 4.9%;
+
+    --secondary: 215 28% 21%; /* Slate Gray #334155 */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 215 28% 25%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 45 93% 47%; /* Mustard Yellow accent */
+    --accent-foreground: 222 84% 4.9%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 28% 21%;
+    --input: 215 28% 17%;
+    --ring: 45 93% 47%;
+
+    --radius: 0.75rem;
+
+    /* Custom portfolio tokens */
+    --hero-glow: 45 93% 47%;
+    --hero-gradient: linear-gradient(135deg, hsl(222 84% 4.9%) 0%, hsl(215 28% 17%) 100%);
+    --accent-glow: 0 0 40px hsl(45 93% 47% / 0.3);
+    --card-shadow: 0 8px 32px hsl(222 84% 4.9% / 0.8);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Light mode kept minimal - portfolio uses dark theme by default */
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 222 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+    --primary: 45 93% 47%;
+    --primary-foreground: 222 84% 4.9%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 84% 4.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background: var(--hero-gradient);
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero section styles */
+  .hero-glow {
+    box-shadow: var(--accent-glow);
+  }
+
+  .card-elevated {
+    background: hsl(var(--card));
+    box-shadow: var(--card-shadow);
+    border: 1px solid hsl(var(--border));
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  /* Text glow effect */
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.5);
+  }
+
+  /* Hover animations */
+  .hover-lift {
+    @apply transition-smooth hover:scale-105 hover:-translate-y-1;
+  }
+
+  .hover-glow {
+    @apply transition-smooth hover:shadow-2xl;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.8);
+  }
+}

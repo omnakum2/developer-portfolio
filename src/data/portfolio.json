@@ -1,0 +1,177 @@
+{
+  "personal": {
+    "name": "Jon Doe Alex",
+    "title": "Full-Stack Developer",
+    "title_2": "Code as craft and logic as art",
+    "tagline": "Full-stack developer passionate about solving real-world problems with Node.js, React, and modern web technologies.",
+    "bio": "Passionate full-stack developer with expertise in Node.js, Nest.js, and React. I love solving complex problems through technology and building scalable, efficient, and user-friendly digital solutions that make a real difference.",
+    "profileImage": "/profile.webp",
+    "location": "Tech Hub City",
+    "email": "jon@gmail.com",
+    "phone": "+91 9787554322",
+    "github": "jondoe2",
+    "linkedin": "jonlinkdoe",
+    "website": "https://jondoealex.dev"
+  },
+  "education": [
+    {
+      "level": "10th",
+      "institution": "Dummy Institution",
+      "year": "2000",
+      "type": "secondary"
+    },
+    {
+      "level": "12th", 
+      "institution": "Dummy Institution",
+      "year": "2002",
+      "type": "higher-secondary"
+    },
+    {
+      "level": "Graduation",
+      "institution": "XYZ, Dummy Institution",
+      "year": "2005",
+      "type": "undergraduate"
+    },
+    {
+      "level": "Post Graduation",
+      "institution": "ABC, Dummy Institution", 
+      "year": "2007",
+      "type": "postgraduate"
+    }
+  ],
+  "experience": [
+    {
+      "position": "Full-Stack Developer",
+      "company": "Tech Z",
+      "duration": "2007 – Present",
+      "type": "full-time",
+      "description": "Leading full-stack development projects, building scalable web applications, and mentoring junior developers."
+    }
+  ],
+  "skills": {
+    "primary": {
+      "name": "Node.js",
+      "description": "Backend API Development",
+      "level": 95,
+      "icon": "nodejs"
+    },
+    "secondary": [
+      {
+        "name": "Nest.js",
+        "level": 90,
+        "icon": "nestjs"
+      },
+      {
+        "name": "React.js",
+        "level": 88,
+        "icon": "react"
+      },
+      {
+        "name": "MySQL",
+        "level": 85,
+        "icon": "mysql"
+      }
+    ],
+    "additional": [
+      {
+        "name": "PHP",
+        "level": 80,
+        "icon": "php"
+      },
+      {
+        "name": "Java",
+        "level": 75,
+        "icon": "java"
+      },
+      {
+        "name": "TypeScript",
+        "level": 85,
+        "icon": "typescript"
+      },
+      {
+        "name": "Docker",
+        "level": 78,
+        "icon": "docker"
+      }
+    ]
+  },
+  "services": [
+    {
+      "title": "Web Design",
+      "description": "Modern, responsive websites tailored for usability and aesthetics",
+      "icon": "palette",
+      "features": [
+        "Responsive Design",
+        "Modern UI/UX",
+        "Performance Optimization",
+        "SEO Friendly"
+      ]
+    },
+    {
+      "title": "Tech Guidance (Consultancy)",
+      "description": "Strategic advice for digital transformation and scalable solutions",
+      "icon": "lightbulb",
+      "features": [
+        "Technical Architecture",
+        "Technology Selection",
+        "Performance Optimization",
+        "Scalability Planning"
+      ]
+    }
+  ],
+  "projects": {
+    "academic": [
+      {
+        "name": "POS Web",
+        "description": "Laravel + Bootstrap web POS with product/category management and billing",
+        "techStack": ["Laravel", "Bootstrap", "MySQL", "PHP"],
+        "category": "E-commerce",
+        "image": "/project-pos.jpg",
+        "features": [
+          "Product Management",
+          "Category Management", 
+          "Billing System",
+          "Inventory Tracking"
+        ]
+      },
+      {
+        "name": "Food Court",
+        "description": "Node.js + React.js restaurant menu app with QR code integration",
+        "techStack": ["Node.js", "React.js", "MongoDB", "QR Codes"],
+        "category": "Restaurant",
+        "image": "/project-foodcourt.jpg",
+        "features": [
+          "Digital Menu",
+          "QR Code Integration",
+          "Order Management",
+          "Real-time Updates"
+        ]
+      }
+    ],
+    "company": [
+      {
+        "name": "ERP Solutions for Brass Industry",
+        "description": "React.js + Nest.js ERP with HR, PO, and quotation modules",
+        "techStack": ["React.js", "Nest.js", "PostgreSQL", "TypeScript"],
+        "category": "Enterprise",
+        "image": "/project-erp.jpg",
+        "status": "Live",
+        "features": [
+          "HR Management",
+          "Purchase Orders",
+          "Quotation System",
+          "Reporting Dashboard"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "email": "jon@gmail.com",
+    "phone": "+91 9787554322",
+    "social": {
+      "github": "https://github.com/jondoe2",
+      "linkedin": "https://linkedin.com/in/jonlinkdoe"
+    },
+    "availability": "Available for freelance projects and consultations"
+  }
+}
