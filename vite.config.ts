@@ -10,6 +10,11 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [react()],
   base: "/",
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+    sourcemap: false,
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
