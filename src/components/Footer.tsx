@@ -7,16 +7,16 @@ import portfolioData from '@/data/portfolio.json';
  * Features clean design with essential links and copyright information
  */
 export const Footer = () => {
-  const { personal, contact } = portfolioData;
+  const { personal } = portfolioData;
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const socialLinks = [
-    { icon: HiMail, href: `mailto:${contact.email}`, label: 'Email' },
-    { icon: FaGithub, href: contact.social.github, label: 'GitHub' },
-    { icon: FaLinkedin, href: contact.social.linkedin, label: 'LinkedIn' },
+    { icon: HiMail, href: `mailto:${personal.email}`, label: 'Email' },
+    { icon: FaGithub, href: personal.github, label: 'GitHub' },
+    { icon: FaLinkedin, href: personal.linkedin, label: 'LinkedIn' },
   ];
 
   const currentYear = new Date().getFullYear();

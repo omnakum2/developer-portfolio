@@ -32,7 +32,7 @@ A modern, responsive personal portfolio website built with React, TypeScript, an
 ### Styling
 - **Custom CSS Variables** - HSL color system for consistent theming
 - **Tailwind Animate** - Animation utilities
-- **Custom Animations** - Fade-in, glow, and float effects
+- **Custom Animations** - Fade-in, and float effects
 - **Responsive Design** - Mobile-first approach
 
 ## 📁 Project Structure
@@ -75,7 +75,6 @@ src/
 ### Animations
 - **Fade In**: Smooth entrance animations
 - **Hover Effects**: Scale and lift on hover
-- **Glow Effects**: Subtle glowing animations
 - **Float**: Gentle floating animation for profile image
 
 ## 🚀 Getting Started

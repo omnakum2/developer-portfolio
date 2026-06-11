@@ -4,13 +4,12 @@
     "title_1": "Full-Stack Developer.",
     "title_2": "Code As Craft.",
     "title_3": "Logic As Art.",
-    "tagline": "Full-stack developer passionate about solving real-world problems with Node.js, React, and modern web technologies.",
-    "bio": "Passionate full-stack developer with expertise in Node.js and React. I love solving complex problems through technology and building scalable, efficient, and user-friendly digital solutions that make a real difference. Beyond coding, I enjoy bringing ideas to life by turning concepts into polished experiences that people love to use. I’m always curious, learning new tools and technologies to stay ahead, and excited to take on challenges that push my creativity and technical skills further.",
+    "tagline": "I build web applications that turn complex ideas into simple, reliable user experiences.",
+    "bio": "I enjoy turning ideas into reliable, scalable products and continuously improving my skills by building and learning new things. I build web applications with NestJS and React, focusing on clean architecture, performance, and which gives user seamless experiences.",
     "profileImage": "/profile.webp",
     "email": "omnakum2@gmail.com",
     "github": "omnakum2",
-    "linkedin": "om-nakum-959109299",
-    "website": "https://omnakum2.dev"
+    "linkedin": "om-nakum-959109299"
   },
   "education": [
     {
@@ -37,53 +36,52 @@
   ],
   "skills": {
     "primary": {
-      "name": "Node.js",
+      "name": "Nest.js",
       "description": "Backend API Development",
-      "level": 95,
-      "icon": "nodejs"
+      "icon": "nestjs"
     },
     "secondary": [
       {
-        "name": "Nest.js",
-        "level": 90,
-        "icon": "nestjs"
-      },
-      {
         "name": "React.js",
-        "level": 88,
         "icon": "react"
       },
       {
+        "name": "TypeScript",
+        "icon": "typescript"
+      },
+      {
         "name": "MySQL",
-        "level": 85,
         "icon": "mysql"
       }
     ],
     "additional": [
       {
-        "name": "TypeScript",
-        "level": 85,
-        "icon": "typescript"
+        "name": "Node.js",
+        "icon": "nodejs"
+      },
+      {
+        "name": "Type ORM",
+        "icon": "typeorm"
       },
       {
         "name": "PHP",
-        "level": 50,
         "icon": "php"
       },
       {
-        "name": "AWS",
-        "level": 70,
-        "icon": "aws"
+        "name": "Tailwind CSS",
+        "icon": "tailwind"
       },
       {
-        "name": "Java",
-        "level": 45,
-        "icon": "java"
+        "name": "bootstrap",
+        "icon": "bootstrap"
       },
       {
         "name": "MUI",
-        "level": 75,
         "icon": "mui"
+      },
+      {
+        "name": "AWS",
+        "icon": "aws"
       }
     ]
   },
@@ -116,8 +114,8 @@
       {
         "name": "Inventory + POS Web",
         "description": "Laravel + Bootstrap web POS with user, product, category masters and billing management.",
-        "techStack": ["Laravel", "Bootstrap", "MySQL", "PHP"],
-        "category": "E-commerce",
+        "techStack": ["Laravel", "Bootstrap", "MySQL"],
+        "category": "Enterprise",
         "image": "/project-pos.jpg",
         "features": [
           "User Management",
@@ -125,21 +123,21 @@
           "Billing System",
           "Inventory Tracking"
         ],
-        "githubUrl": "https://github.com/omnakum2/Inventory"
+        "sourceCode": "https://github.com/omnakum2/Inventory"
       },
       {
         "name": "Food Court",
         "description": "Node.js + React.js restaurant menu app with admin panel and QR code integration.",
-        "techStack": ["Node.js", "React.js", "MongoDB", "QR Codes"],
+        "techStack": ["Node.js", "React.js", "MySQL"],
         "category": "Restaurant",
         "image": "/project-foodcourt.jpg",
         "features": [
-          "Digital Menu",
-          "QR Code Integration",
-          "Admin Panel",
+          "Digital Menu QR Code",
+          "Order Management",
+          "Admin Dashboard",
           "Real-time Updates"
         ],
-        "githubUrl": "https://github.com/omnakum2/Resto"
+        "liveDemo": "https://resto-frontend-cc24.onrender.com"
       }
     ],
     "company": [
@@ -151,20 +149,13 @@
         "image": "/project-erp.jpg",
         "status": "Live",
         "features": [
-          "Purchase Orders",
-          "HR Management",
           "Quotation System",
+          "HR Management",
+          "Purchase Orders",
           "Reporting Dashboard"
         ]
       }
     ]
   },
-  "contact": {
-    "email": "omnakum2@gmail.com",
-    "social": {
-      "github": "https://github.com/omnakum2",
-      "linkedin": "https://linkedin.com/in/om-nakum-959109299"
-    },
-    "availability": "Available for freelance projects and consultations"
-  }
+  "availability": "I'm currently available for new projects and consulting opportunities. Let's discuss how I can help you achieve your goals."
 }

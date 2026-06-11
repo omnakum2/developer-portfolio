@@ -18,7 +18,7 @@ export const PortfolioSection = () => {
     project: any;
     isAcademic?: boolean;
   }) => (
-    <div className="rounded-lg border bg-card text-card-foreground shadow-sm card-elevated hover-glow group transition-smooth">
+    <div className="rounded-lg border bg-card text-card-foreground shadow-sm card-elevated group transition-smooth">
       <div className="relative overflow-hidden rounded-t-lg">
         <img
           src={project.image}
@@ -88,11 +88,24 @@ export const PortfolioSection = () => {
 
         {/* Action Buttons */}
         <div className="flex gap-2 pt-2">
-          {project.status !== "Live" && (
-            <button onClick={() => window.open(project.githubUrl, "_blank")} className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground flex-1 h-9">
-              <FaGithub className="h-4 w-4" />
-              View Code
+          {project.liveDemo && (
+            <button
+              onClick={() => window.open(project.liveDemo, "_blank")}
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 flex-1 h-9 bg-primary text-primary-foreground hover:bg-primary/90"
+            >
+              <HiExternalLink className="h-4 w-4" />
+              Live Demo
             </button>
+          )}
+
+          {project.status !== "Live" && (
+            <button
+              onClick={() => window.open(project.sourceCode, "_blank")}
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground flex-1 h-9"
+            >
+              <FaGithub className="h-4 w-4" />
+            View Code
+          </button>
           )}
         </div>
       </div>
@@ -118,22 +131,20 @@ export const PortfolioSection = () => {
             <div className="inline-flex h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground grid w-full grid-cols-2 max-w-md mx-auto mb-12">
               <button
                 onClick={() => setActiveTab("academic")}
-                className={`inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 font-semibold ${
-                  activeTab === "academic"
+                className={`inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 font-semibold ${activeTab === "academic"
                     ? "bg-background text-foreground shadow-sm"
                     : "text-muted-foreground"
-                }`}
+                  }`}
               >
                 <HiBookOpen className="h-4 w-4 mr-2" />
                 Academic Projects
               </button>
               <button
                 onClick={() => setActiveTab("company")}
-                className={`inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 font-semibold ${
-                  activeTab === "company"
+                className={`inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 font-semibold ${activeTab === "company"
                     ? "bg-background text-foreground shadow-sm"
                     : "text-muted-foreground"
-                }`}
+                  }`}
               >
                 <HiOfficeBuilding className="h-4 w-4 mr-2" />
                 Company Projects

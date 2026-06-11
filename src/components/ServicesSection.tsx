@@ -40,7 +40,7 @@ export const ServicesSection = () => {
           {services.map((service, index) => (
             <div 
               key={service.title} 
-              className={`rounded-lg border bg-card text-card-foreground shadow-sm card-elevated hover-glow transition-smooth group ${
+              className={`rounded-lg border bg-card text-card-foreground shadow-sm card-elevated transition-smooth group ${
                 index === 0 ? 'animate-fade-in-left' : 'animate-fade-in-right'
               }`}
             >

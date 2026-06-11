@@ -7,19 +7,19 @@ import portfolioData from "@/data/portfolio.json";
  * Features contact cards, availability info, and a functional contact form
  */
 export const ContactSection = () => {
-  const { contact } = portfolioData;
+  const { personal, availability } = portfolioData;
 
   const contactInfo = [
-    { icon: HiMail, text: contact.email, href: `mailto:${contact.email}` },
+    { icon: HiMail, text: personal.email, href: `mailto:${personal.email}` },
     {
       icon: FaGithub,
       text: "Explore My Projects",
-      href: contact.social.github,
+      href: personal.github,
     },
     {
       icon: FaLinkedin,
       text: "Network with Me",
-      href: contact.social.linkedin,
+      href: personal.linkedin,
     },
   ];
 
@@ -88,9 +88,7 @@ export const ContactSection = () => {
                     <span>Available for remote work</span>
                   </div>
                   <p className="text-sm">
-                    I'm currently available for new projects and consulting
-                    opportunities. Let's discuss how I can help you achieve your
-                    goals.
+                    {availability}
                   </p>
                 </div>
               </div>
