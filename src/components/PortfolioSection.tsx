@@ -19,11 +19,11 @@ export const PortfolioSection = () => {
     isAcademic?: boolean;
   }) => (
     <div className="rounded-lg border bg-card text-card-foreground shadow-sm card-elevated group transition-smooth">
-      <div className="relative overflow-hidden rounded-t-lg">
+      <div className="w-full aspect-video overflow-hidden">
         <img
           src={project.image}
           alt={`${project.name} project screenshot`}
-          className="w-full h-48 object-cover group-hover:scale-105 transition-smooth"
+          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-smooth"></div>
         {!isAcademic && project.status && (
@@ -87,27 +87,27 @@ export const PortfolioSection = () => {
         </div>
 
         {/* Action Buttons */}
-        <div className="flex gap-2 pt-2">
-          {project.liveDemo && (
-            <button
-              onClick={() => window.open(project.liveDemo, "_blank")}
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 flex-1 h-9 bg-primary text-primary-foreground hover:bg-primary/90"
-            >
-              <HiExternalLink className="h-4 w-4" />
-              Live Demo
-            </button>
-          )}
+        {isAcademic && (
+          <div className="flex gap-2 pt-2">
+            {project.liveDemo && (
+              <button
+                onClick={() => window.open(project.liveDemo, "_blank")}
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 flex-1 h-9 bg-primary text-primary-foreground hover:bg-primary/90"
+              >
+                <HiExternalLink className="h-4 w-4" />
+                Live Demo
+              </button>
+            )}
 
-          {project.status !== "Live" && (
             <button
               onClick={() => window.open(project.sourceCode, "_blank")}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground flex-1 h-9"
             >
               <FaGithub className="h-4 w-4" />
-            View Code
-          </button>
-          )}
-        </div>
+              View Code
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -137,7 +137,7 @@ export const PortfolioSection = () => {
                   }`}
               >
                 <HiBookOpen className="h-4 w-4 mr-2" />
-                Academic Projects
+                Academic & Personal
               </button>
               <button
                 onClick={() => setActiveTab("company")}
@@ -147,7 +147,7 @@ export const PortfolioSection = () => {
                   }`}
               >
                 <HiOfficeBuilding className="h-4 w-4 mr-2" />
-                Company Projects
+                Industry
               </button>
             </div>
 

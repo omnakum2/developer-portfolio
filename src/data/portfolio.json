@@ -64,8 +64,16 @@
         "icon": "typeorm"
       },
       {
-        "name": "PHP",
-        "icon": "php"
+        "name": "Astro",
+        "icon": "astro"
+      },
+      {
+        "name": "MUI",
+        "icon": "mui"
+      },
+      {
+        "name": "AWS",
+        "icon": "aws"
       },
       {
         "name": "Tailwind CSS",
@@ -76,12 +84,8 @@
         "icon": "bootstrap"
       },
       {
-        "name": "MUI",
-        "icon": "mui"
-      },
-      {
-        "name": "AWS",
-        "icon": "aws"
+        "name": "PHP",
+        "icon": "php"
       }
     ]
   },
@@ -116,7 +120,7 @@
         "description": "Laravel + Bootstrap web POS with user, product, category masters and billing management.",
         "techStack": ["Laravel", "Bootstrap", "MySQL"],
         "category": "Enterprise",
-        "image": "/project-pos.jpg",
+        "image": "/project-pos.webp",
         "features": [
           "User Management",
           "Product + Category Management",
@@ -130,14 +134,31 @@
         "description": "Node.js + React.js restaurant menu app with admin panel and QR code integration.",
         "techStack": ["Node.js", "React.js", "MySQL"],
         "category": "Restaurant",
-        "image": "/project-foodcourt.jpg",
+        "image": "/project-foodcourt.webp",
         "features": [
           "Digital Menu QR Code",
           "Order Management",
           "Admin Dashboard",
           "Real-time Updates"
         ],
+        "sourceCode": "https://github.com/omnakum2/Resto",
         "liveDemo": "https://resto-frontend-cc24.onrender.com"
+      },
+      {
+        "name": "Bid Club",
+        "description": "React.js + Node.js WebSocket multiplayer prediction card game with four modes and chat.",
+        "techStack": ["React.js", "Node.js", "WebSocket", "TypeScript"],
+        "category": "Games",
+        "image": "/project-bidclub.webp",
+        "status": "Live",
+        "features": [
+          "Real-time Multiplayer game",
+          "Four different Game Modes",
+          "Live Scoreboard & Turn Timers",
+          "Quick Chat & Invite Links"
+        ],
+        "sourceCode": "https://github.com/omnakum2/time-pass",
+        "liveDemo": "https://bidclub.onrender.com"
       }
     ],
     "company": [
@@ -146,13 +167,27 @@
         "description": "React.js + Nest.js ERP with HR, PO, and quotation modules.",
         "techStack": ["React.js", "Nest.js", "MySQL", "TypeScript", "AWS"],
         "category": "Enterprise",
-        "image": "/project-erp.jpg",
+        "image": "/project-erp.webp",
         "status": "Live",
         "features": [
           "Quotation System",
           "HR Management",
           "Purchase Orders",
           "Reporting Dashboard"
+        ]
+      },
+      {
+        "name": "Managed IT & Cybersecurity Website",
+        "description": "Astro + MDX website for a managed IT services business.",
+        "techStack": ["Astro", "MDX", "TypeScript", "React"],
+        "category": "Business / IT Services",
+        "image": "/project-it-services.webp",
+        "status": "Live",
+        "features": [
+          "Managed IT Services",
+          "Cybersecurity Solutions",
+          "Service & Pricing Pages",
+          "Remote IT Support"
         ]
       }
     ]

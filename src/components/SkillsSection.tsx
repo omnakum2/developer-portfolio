@@ -2,7 +2,7 @@ import { HiCode } from 'react-icons/hi';
 import portfolioData from '@/data/portfolio.json';
 import { BiLogoTypescript } from 'react-icons/bi';
 import { FaAws, FaBootstrap, FaNodeJs, FaPhp, FaReact } from 'react-icons/fa';
-import { SiMui, SiMysql, SiNestjs, SiTailwindcss, SiTypeorm } from 'react-icons/si';
+import { SiAstro, SiMui, SiMysql, SiNestjs, SiTailwindcss, SiTypeorm } from 'react-icons/si';
 
 /**
  * Skills section component showcasing technical expertise
@@ -25,6 +25,7 @@ export const SkillsSection = () => {
       'bootstrap': <FaBootstrap className="h-6 w-6" />,
       'tailwind': <SiTailwindcss className="h-6 w-6" />,
       'typeorm': <SiTypeorm className="h-6 w-6" />,
+      'astro': <SiAstro className="h-6 w-6" />,
     };
     return iconMap[skillName.toLowerCase()] || <HiCode className="h-6 w-6" />;
   };
