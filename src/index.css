@@ -19,8 +19,8 @@ All colors MUST be HSL.
     --popover: 215 28% 17%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 45 93% 47%; /* Mustard Yellow #EAB308 */
-    --primary-foreground: 222 84% 4.9%;
+    --primary: 255 90% 66%; /* Violet / Indigo */
+    --primary-foreground: 210 40% 98%;
 
     --secondary: 215 28% 21%; /* Slate Gray #334155 */
     --secondary-foreground: 210 40% 98%;
@@ -28,15 +28,15 @@ All colors MUST be HSL.
     --muted: 215 28% 25%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 45 93% 47%; /* Mustard Yellow accent */
-    --accent-foreground: 222 84% 4.9%;
+    --accent: 255 90% 66%; /* Violet / Indigo accent */
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 215 28% 21%;
     --input: 215 28% 17%;
-    --ring: 45 93% 47%;
+    --ring: 255 90% 66%;
 
     --radius: 0.75rem;
 
@@ -52,8 +52,8 @@ All colors MUST be HSL.
     --foreground: 222 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222 84% 4.9%;
-    --primary: 45 93% 47%;
-    --primary-foreground: 222 84% 4.9%;
+    --primary: 255 90% 66%;
+    --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96%;
     --secondary-foreground: 222 84% 4.9%;
   }

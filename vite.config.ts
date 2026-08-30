@@ -5,7 +5,9 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: "/",
+  // GitHub Pages project site is served at username.github.io/<repo>/.
+  // Change "developer-portfolio" to your actual repo name (keep the slashes).
+  base: "/developer-portfolio/",
   build: {
     outDir: "dist",
     assetsDir: "assets",

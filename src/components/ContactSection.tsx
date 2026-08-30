@@ -8,6 +8,7 @@ import portfolioData from "@/data/portfolio.json";
  */
 export const ContactSection = () => {
   const { personal, availability } = portfolioData;
+  const section = portfolioData.sections.contact;
 
   const contactInfo = [
     { icon: HiMail, text: personal.email, href: `mailto:${personal.email}` },
@@ -28,11 +29,10 @@ export const ContactSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Get In <span className="text-primary">Touch</span>
+            {section.title} <span className="text-primary">{section.titleAccent}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to start your next project? Let's discuss how I can help bring
-            your ideas to life.
+            {section.subtitle}
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export const ContactSection = () => {
           {/* Contact Information */}
           <div className="animate-fade-in-left space-y-6">
             <h3 className="font-heading text-2xl font-semibold text-foreground mb-8">
-              Contact Information
+              {section.infoHeading}
             </h3>
 
             {/* Contact Cards Row */}
@@ -79,7 +79,7 @@ export const ContactSection = () => {
                 <div className="flex items-center mb-4">
                   <HiLocationMarker className="h-5 w-5 text-accent mr-2" />
                   <h4 className="font-semibold text-foreground">
-                    Location & Availability
+                    {section.availabilityHeading}
                   </h4>
                 </div>
                 <div className="space-y-2 text-muted-foreground">

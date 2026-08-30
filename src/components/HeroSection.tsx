@@ -55,12 +55,12 @@ export const HeroSection = () => {
           <div className="relative inline-block mb-8">
             <div className="w-48 h-48 mx-auto rounded-full overflow-hidden ring-4 ring-primary/20 animate-float">
               <img
-                src={personal.profileImage}
+                src={`${import.meta.env.BASE_URL}${personal.profileImage.replace(/^\//, "")}`}
                 alt={`${personal.name} - Profile Picture`}
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent"></div>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent pointer-events-none"></div>
           </div>
 
           {/* Name and Title */}

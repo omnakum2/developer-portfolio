@@ -1,8 +1,18 @@
 import { HiCode } from 'react-icons/hi';
 import portfolioData from '@/data/portfolio.json';
 import { BiLogoTypescript } from 'react-icons/bi';
-import { FaAws, FaBootstrap, FaNodeJs, FaPhp, FaReact } from 'react-icons/fa';
-import { SiAstro, SiMui, SiMysql, SiNestjs, SiTailwindcss, SiTypeorm } from 'react-icons/si';
+import { FaNodeJs, FaReact } from 'react-icons/fa';
+import {
+  SiNextdotjs,
+  SiPostgresql,
+  SiExpress,
+  SiPrisma,
+  SiGraphql,
+  SiDocker,
+  SiMongodb,
+  SiRedis,
+  SiTailwindcss,
+} from 'react-icons/si';
 
 /**
  * Skills section component showcasing technical expertise
@@ -10,22 +20,23 @@ import { SiAstro, SiMui, SiMysql, SiNestjs, SiTailwindcss, SiTypeorm } from 'rea
  */
 export const SkillsSection = () => {
   const { skills } = portfolioData;
+  const section = portfolioData.sections.skills;
 
   // Icon mapping for different skill categories
   const getSkillIcon = (skillName: string) => {
     const iconMap: Record<string, JSX.Element> = {
-      'nodejs': <FaNodeJs className="h-6 w-6" />,
-      'nestjs': <SiNestjs className="h-6 w-6" />,
+      'nextjs': <SiNextdotjs className="h-6 w-6" />,
       'react': <FaReact className="h-6 w-6" />,
-      'mysql': <SiMysql className="h-6 w-6" />,
       'typescript': <BiLogoTypescript className="h-6 w-6" />,
-      'php': <FaPhp className="h-6 w-6" />,
-      'aws': <FaAws className="h-6 w-6" />,
-      'mui': <SiMui className="h-6 w-6" />,
-      'bootstrap': <FaBootstrap className="h-6 w-6" />,
+      'postgresql': <SiPostgresql className="h-6 w-6" />,
+      'nodejs': <FaNodeJs className="h-6 w-6" />,
+      'express': <SiExpress className="h-6 w-6" />,
+      'prisma': <SiPrisma className="h-6 w-6" />,
+      'graphql': <SiGraphql className="h-6 w-6" />,
+      'docker': <SiDocker className="h-6 w-6" />,
+      'mongodb': <SiMongodb className="h-6 w-6" />,
+      'redis': <SiRedis className="h-6 w-6" />,
       'tailwind': <SiTailwindcss className="h-6 w-6" />,
-      'typeorm': <SiTypeorm className="h-6 w-6" />,
-      'astro': <SiAstro className="h-6 w-6" />,
     };
     return iconMap[skillName.toLowerCase()] || <HiCode className="h-6 w-6" />;
   };
@@ -35,10 +46,10 @@ export const SkillsSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Skills & <span className="text-primary">Expertise</span>
+            {section.title} <span className="text-primary">{section.titleAccent}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Technologies and tools I use to build Web Applications
+            {section.subtitle}
           </p>
         </div>
 
@@ -89,7 +100,7 @@ export const SkillsSection = () => {
             {/* Additional Skills */}
             <div className="lg:col-span-3 animate-fade-in">
               <h3 className="font-heading text-2xl font-semibold text-foreground mb-6">
-                Additional Technologies
+                {section.additionalHeading}
               </h3>
               <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
                 {skills.additional.map((skill) => (

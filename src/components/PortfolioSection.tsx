@@ -9,6 +9,7 @@ import { useState } from "react";
  */
 export const PortfolioSection = () => {
   const { projects } = portfolioData;
+  const section = portfolioData.sections.portfolio;
   const [activeTab, setActiveTab] = useState("academic");
 
   const ProjectCard = ({
@@ -19,13 +20,13 @@ export const PortfolioSection = () => {
     isAcademic?: boolean;
   }) => (
     <div className="rounded-lg border bg-card text-card-foreground shadow-sm card-elevated group transition-smooth">
-      <div className="w-full aspect-video overflow-hidden">
+      <div className="relative w-full aspect-video overflow-hidden">
         <img
-          src={project.image}
+          src={`${import.meta.env.BASE_URL}${String(project.image).replace(/^\//, "")}`}
           alt={`${project.name} project screenshot`}
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-smooth"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-smooth pointer-events-none"></div>
         {!isAcademic && project.status && (
           <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 absolute top-4 right-4">
             {project.status}
@@ -117,11 +118,10 @@ export const PortfolioSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Things I’ve <span className="text-primary">Built</span>
+            {section.title} <span className="text-primary">{section.titleAccent}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A showcase of projects that demonstrate my technical skills and
-            problem-solving abilities
+            {section.subtitle}
           </p>
         </div>
 
@@ -137,7 +137,7 @@ export const PortfolioSection = () => {
                   }`}
               >
                 <HiBookOpen className="h-4 w-4 mr-2" />
-                Academic & Personal
+                {section.tabPersonal}
               </button>
               <button
                 onClick={() => setActiveTab("company")}
@@ -147,7 +147,7 @@ export const PortfolioSection = () => {
                   }`}
               >
                 <HiOfficeBuilding className="h-4 w-4 mr-2" />
-                Industry
+                {section.tabClient}
               </button>
             </div>
 
@@ -184,7 +184,7 @@ export const PortfolioSection = () => {
         {/* Portfolio CTA */}
         <div className="text-center mt-16">
           <p className="text-lg text-muted-foreground mb-6">
-            Interested in seeing more work or discussing a project?
+            Want to see more, or talk through an idea?
           </p>
           <button
             onClick={() => {
@@ -193,7 +193,7 @@ export const PortfolioSection = () => {
             }}
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary hover:bg-primary hover:text-primary-foreground hover-lift h-11 px-8"
           >
-            Let's Work Together
+            Start a Conversation
             <HiExternalLink className="h-5 w-5" />
           </button>
         </div>

@@ -7,6 +7,7 @@ import portfolioData from "@/data/portfolio.json";
  */
 export const AboutSection = () => {
   const { personal, education, experience } = portfolioData;
+  const section = portfolioData.sections.about;
 
   const numberOfYears = new Date().getFullYear() - new Date(experience[0].joiningYear).getFullYear();
 
@@ -15,10 +16,10 @@ export const AboutSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-            About <span className="text-primary">Me</span>
+            {section.title} <span className="text-primary">{section.titleAccent}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Get to know more about my journey, passion, and expertise
+            {section.subtitle}
           </p>
         </div>
 
@@ -26,7 +27,7 @@ export const AboutSection = () => {
           {/* Personal Bio */}
           <div className="animate-fade-in-left">
             <h3 className="font-heading text-2xl font-semibold text-foreground mb-6">
-              My Story
+              {section.storyHeading}
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               {personal.bio}
@@ -55,7 +56,7 @@ export const AboutSection = () => {
           {/* Timeline */}
           <div className="animate-fade-in-right">
             <h3 className="font-heading text-2xl font-semibold text-foreground mb-8">
-              Journey Timeline
+              {section.timelineHeading}
             </h3>
 
             <div className="space-y-6">

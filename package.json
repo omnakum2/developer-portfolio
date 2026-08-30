@@ -1,9 +1,9 @@
 {
-  "name": "omnakum2.dev",
+  "name": "developer-portfolio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://omnakum2.github.io",
+  "homepage": "https://omnakum2.github.io/developer-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

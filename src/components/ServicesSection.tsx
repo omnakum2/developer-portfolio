@@ -8,6 +8,7 @@ import { FaLaptopCode } from 'react-icons/fa';
  */
 export const ServicesSection = () => {
   const { services } = portfolioData;
+  const section = portfolioData.sections.services;
 
   const getServiceIcon = (iconName: string) => {
     const iconMap: Record<string, JSX.Element> = {
@@ -29,10 +30,10 @@ export const ServicesSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-            My <span className="text-primary">Services</span>
+            {section.title} <span className="text-primary">{section.titleAccent}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive solutions tailored to your digital needs
+            {section.subtitle}
           </p>
         </div>
 
@@ -65,7 +66,7 @@ export const ServicesSection = () => {
                 {/* Service Features */}
                 <div className="space-y-3">
                   <h4 className="font-semibold text-foreground text-lg">
-                    What's Included:
+                    {section.includedHeading}
                   </h4>
                   <ul className="space-y-2">
                     {service.features.map((feature) => (
@@ -84,7 +85,7 @@ export const ServicesSection = () => {
         {/* Additional CTA */}
         <div className="text-center mt-16">
           <p className="text-lg text-muted-foreground mb-6">
-            Need something custom? Let's discuss your unique requirements.
+            Have something outside these boxes? Let's talk it through.
           </p>
           <button
             onClick={scrollToContact}

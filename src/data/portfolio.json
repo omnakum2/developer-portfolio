@@ -1,44 +1,44 @@
 {
   "personal": {
-    "name": "Om Nakum",
-    "title_1": "Full-Stack Developer.",
-    "title_2": "Code As Craft.",
-    "title_3": "Logic As Art.",
-    "tagline": "I build web applications that turn complex ideas into simple, reliable user experiences.",
-    "bio": "I enjoy turning ideas into reliable, scalable products and continuously improving my skills by building and learning new things. I build web applications with NestJS and React, focusing on clean architecture, performance, and which gives user seamless experiences.",
+    "name": "Aarav Mehta",
+    "title_1": "Product Engineer.",
+    "title_2": "From Concept To Launch.",
+    "title_3": "Clean Code, Real Impact.",
+    "tagline": "I turn rough ideas into polished web products that people actually find useful.",
+    "bio": "I'm a freelance developer who partners with founders to build software end to end. Hand me a problem and I'll take the whole path, data model, API, interface, and the deploy that puts it in front of real users, with a focus on reliability and the small details that make an app feel right.",
     "profileImage": "/profile.webp",
-    "email": "omnakum2@gmail.com",
-    "github": "omnakum2",
-    "linkedin": "om-nakum-959109299"
+    "email": "hello@aaravmehta.dev",
+    "github": "https://github.com",
+    "linkedin": "https://www.linkedin.com"
   },
   "education": [
     {
-      "level": "BCA • Bachelor of Computer Applications",
-      "institution": "Saurashtra University, Rajkot",
-      "year": "2023",
+      "level": "B.E. • Information Technology",
+      "institution": "Westford College of Engineering",
+      "year": "2017",
       "type": "undergraduate"
     },
     {
-      "level": "MCA • Master of Computer Applications",
-      "institution": "Gujarat Technological University, Ahmedabad",
-      "year": "2025",
+      "level": "M.Tech • Computer Science",
+      "institution": "Ashcroft University",
+      "year": "2019",
       "type": "postgraduate"
     }
   ],
   "experience": [
     {
-      "position": "Full-Stack Developer",
-      "company": "Code Symphony LLP",
-      "joiningYear": "2024",
-      "type": "full-time",
-      "description": "Leading full-stack development projects, building scalable web applications, and mentoring junior developers."
+      "position": "Freelance Software Developer",
+      "company": "Independent Studio",
+      "joiningYear": "2019",
+      "type": "freelance",
+      "description": "Running a one-person studio for early-stage startups, scoping the work, standing up the backend and frontend, wiring integrations, and shipping to production, then staying on to maintain and improve what I build."
     }
   ],
   "skills": {
     "primary": {
-      "name": "Nest.js",
-      "description": "Backend API Development",
-      "icon": "nestjs"
+      "name": "Next.js",
+      "description": "Modern Full-Stack Apps",
+      "icon": "nextjs"
     },
     "secondary": [
       {
@@ -50,8 +50,8 @@
         "icon": "typescript"
       },
       {
-        "name": "MySQL",
-        "icon": "mysql"
+        "name": "PostgreSQL",
+        "icon": "postgresql"
       }
     ],
     "additional": [
@@ -60,137 +60,158 @@
         "icon": "nodejs"
       },
       {
-        "name": "Type ORM",
-        "icon": "typeorm"
+        "name": "Express",
+        "icon": "express"
       },
       {
-        "name": "Astro",
-        "icon": "astro"
+        "name": "Prisma",
+        "icon": "prisma"
       },
       {
-        "name": "MUI",
-        "icon": "mui"
+        "name": "GraphQL",
+        "icon": "graphql"
       },
       {
-        "name": "AWS",
-        "icon": "aws"
+        "name": "Docker",
+        "icon": "docker"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "mongodb"
+      },
+      {
+        "name": "Redis",
+        "icon": "redis"
       },
       {
         "name": "Tailwind CSS",
         "icon": "tailwind"
-      },
-      {
-        "name": "bootstrap",
-        "icon": "bootstrap"
-      },
-      {
-        "name": "PHP",
-        "icon": "php"
       }
     ]
   },
   "services": [
     {
-      "title": "Web Design",
-      "description": "Modern, responsive websites tailored for usability and aesthetics",
+      "title": "Product Engineering",
+      "description": "I take web products from a first sketch to a live launch, architecture, interface, and everything between, built to feel fast and stay easy to maintain.",
       "icon": "palette",
       "features": [
-        "Responsive Design",
-        "Modern UI/UX",
-        "Performance Optimization",
-        "SEO Friendly"
+        "Idea-to-Launch Builds",
+        "Responsive Interfaces",
+        "Speed & Optimization",
+        "Maintainable Codebase"
       ]
     },
     {
-      "title": "Tech Consultancy",
-      "description": "Strategic advice for digital transformation and scalable solutions",
+      "title": "Backend & API Development",
+      "description": "Solid server foundations, well-structured APIs, sensible data models, and secure deployments ready for the cloud.",
       "icon": "lightbulb",
       "features": [
-        "Technical Architecture",
-        "Technology Selection",
-        "Performance Optimization",
-        "Scalability Planning"
+        "REST & GraphQL APIs",
+        "Data Modeling",
+        "Auth & Security",
+        "Cloud-Ready Deploys"
       ]
     }
   ],
   "projects": {
-    "academic": [
+    "academic": [  
       {
-        "name": "Inventory + POS Web",
-        "description": "Laravel + Bootstrap web POS with user, product, category masters and billing management.",
-        "techStack": ["Laravel", "Bootstrap", "MySQL"],
-        "category": "Enterprise",
-        "image": "/project-pos.webp",
+        "name": "Plateful",
+        "description": "A recipe-discovery app with a weekly meal planner and an auto-generated shopping list.",
+        "techStack": ["React.js", "Node.js", "MongoDB"],
+        "category": "Lifestyle",
+        "image": "/project-plateful.svg",
         "features": [
-          "User Management",
-          "Product + Category Management",
-          "Billing System",
-          "Inventory Tracking"
+          "Recipe Search & Filters",
+          "Weekly Meal Planner",
+          "Auto Shopping List",
+          "Save Favourites"
         ],
-        "sourceCode": "https://github.com/omnakum2/Inventory"
+        "sourceCode": "https://github.com",
+        "liveDemo": "https://vercel.com"
       },
       {
-        "name": "Food Court",
-        "description": "Node.js + React.js restaurant menu app with admin panel and QR code integration.",
-        "techStack": ["Node.js", "React.js", "MySQL"],
-        "category": "Restaurant",
-        "image": "/project-foodcourt.webp",
-        "features": [
-          "Digital Menu QR Code",
-          "Order Management",
-          "Admin Dashboard",
-          "Real-time Updates"
-        ],
-        "sourceCode": "https://github.com/omnakum2/Resto",
-        "liveDemo": "https://resto-frontend-cc24.onrender.com"
-      },
-      {
-        "name": "Bid Club",
-        "description": "React.js + Node.js WebSocket multiplayer prediction card game with four modes and chat.",
-        "techStack": ["React.js", "Node.js", "WebSocket", "TypeScript"],
-        "category": "Games",
-        "image": "/project-bidclub.webp",
+        "name": "Trailhead",
+        "description": "A habit and goal tracker that keeps you moving with streaks, reminders, and progress charts.",
+        "techStack": ["React.js", "Express", "Redis"],
+        "category": "Productivity",
+        "image": "/project-trailhead.svg",
         "status": "Live",
         "features": [
-          "Real-time Multiplayer game",
-          "Four different Game Modes",
-          "Live Scoreboard & Turn Timers",
-          "Quick Chat & Invite Links"
+          "Daily Habit Streaks",
+          "Goal Milestones",
+          "Smart Reminders",
+          "Progress Charts"
         ],
-        "sourceCode": "https://github.com/omnakum2/time-pass",
-        "liveDemo": "https://bidclub.onrender.com"
+        "sourceCode": "https://github.com",
+        "liveDemo": "https://vercel.com"
       }
     ],
     "company": [
       {
-        "name": "ERP Solutions for Brass Industry",
-        "description": "React.js + Nest.js ERP with HR, PO, and quotation modules.",
-        "techStack": ["React.js", "Nest.js", "MySQL", "TypeScript", "AWS"],
-        "category": "Enterprise",
-        "image": "/project-erp.webp",
+        "name": "Ledgerly",
+        "description": "An invoicing and expense platform for freelancers, with client billing, tax summaries, and payment tracking.",
+        "techStack": ["React.js", "Node.js", "PostgreSQL", "Docker"],
+        "category": "FinTech",
+        "image": "/project-ledgerly.svg",
         "status": "Live",
         "features": [
-          "Quotation System",
-          "HR Management",
-          "Purchase Orders",
-          "Reporting Dashboard"
+          "Client Invoicing",
+          "Expense Tracking",
+          "Tax Summaries",
+          "Payment Status"
         ]
       },
       {
-        "name": "Managed IT & Cybersecurity Website",
-        "description": "Astro + MDX website for a managed IT services business.",
-        "techStack": ["Astro", "MDX", "TypeScript", "React"],
-        "category": "Business / IT Services",
-        "image": "/project-it-services.webp",
+        "name": "FleetPulse",
+        "description": "A logistics dashboard for tracking vehicles in real time, planning routes, and monitoring delivery health.",
+        "techStack": ["Next.js", "GraphQL", "PostgreSQL"],
+        "category": "Logistics",
+        "image": "/project-fleetpulse.svg",
         "status": "Live",
         "features": [
-          "Managed IT Services",
-          "Cybersecurity Solutions",
-          "Service & Pricing Pages",
-          "Remote IT Support"
+          "Live Vehicle Tracking",
+          "Route Planning",
+          "Delivery Monitoring",
+          "Fleet Reports"
         ]
       }
     ]
   },
-  "availability": "I'm currently available for new projects and consulting opportunities. Let's discuss how I can help you achieve your goals."
+  "availability": "I'm taking on a couple of new projects this quarter. If you're building something, or want to breathe new life into an existing app, let's set up a chat.",
+  "sections": {
+    "about": {
+      "title": "Who I",
+      "titleAccent": "Am",
+      "subtitle": "A quick look at my background, what I focus on, and how I work.",
+      "storyHeading": "A Little Background",
+      "timelineHeading": "My Journey"
+    },
+    "skills": {
+      "title": "My",
+      "titleAccent": "Toolkit",
+      "subtitle": "The technologies I reach for to design and ship web applications.",
+      "additionalHeading": "Also In My Toolbox"
+    },
+    "services": {
+      "title": "How I Can",
+      "titleAccent": "Help",
+      "subtitle": "Focused ways I can move your product forward, end to end.",
+      "includedHeading": "What You Get:"
+    },
+    "portfolio": {
+      "title": "Selected",
+      "titleAccent": "Work",
+      "subtitle": "A few projects that show how I think and what I can ship.",
+      "tabPersonal": "Personal Projects",
+      "tabClient": "Client Work"
+    },
+    "contact": {
+      "title": "Let's",
+      "titleAccent": "Connect",
+      "subtitle": "Have a project in mind, or just want to say hello? My inbox is open.",
+      "infoHeading": "Ways To Reach Me",
+      "availabilityHeading": "Where & When"
+    }
+  }
 }
