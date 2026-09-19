@@ -1,4 +1,4 @@
-import { HiArrowDown, HiDownload, HiMail } from "react-icons/hi";
+import { HiArrowDown, HiCode, HiMail } from "react-icons/hi";
 import { useEffect, useRef } from "react";
 import portfolioData from "@/data/portfolio.json";
 
@@ -47,8 +47,10 @@ export const HeroSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center pt-16"
+      className="min-h-screen flex items-center justify-center pt-28 pb-16 relative overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900/90 to-background border-b border-border/50"
     >
+      {/* Hero Ambient Glow */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-primary/15 rounded-full blur-[130px] pointer-events-none"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center animate-fade-in">
           {/* Profile Image */}
@@ -83,8 +85,8 @@ export const HeroSection = () => {
               onClick={() => scrollToSection("portfolio")}
               className="flex items-center justify-center font-semibold px-8 py-3 bg-primary text-primary-foreground hover:bg-primary/90 rounded-md hover-lift transition-smooth"
             >
-              <HiDownload className="mr-2 h-5 w-5" />
-              View Portfolio
+              <HiCode className="mr-2 h-5 w-5" />
+              View Projects
             </button>
 
             <button
@@ -92,7 +94,7 @@ export const HeroSection = () => {
               className="flex items-center justify-center font-semibold px-8 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-md hover-lift transition-smooth"
             >
               <HiMail className="mr-2 h-5 w-5" />
-              Contact Me
+              Get in Touch
             </button>
           </div>
 

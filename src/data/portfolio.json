@@ -1,11 +1,11 @@
 {
   "personal": {
     "name": "Aarav Mehta",
-    "title_1": "Product Engineer.",
-    "title_2": "From Concept To Launch.",
-    "title_3": "Clean Code, Real Impact.",
-    "tagline": "I turn rough ideas into polished web products that people actually find useful.",
-    "bio": "I'm a freelance developer who partners with founders to build software end to end. Hand me a problem and I'll take the whole path, data model, API, interface, and the deploy that puts it in front of real users, with a focus on reliability and the small details that make an app feel right.",
+    "title_1": "Next.js Full-Stack Engineer.",
+    "title_2": "Server-Driven Web Architecture.",
+    "title_3": "Modern Full-Stack Applications.",
+    "tagline": "Building scalable web applications using Next.js, supported by React, TypeScript, and Node.js backends.",
+    "bio": "Full-stack engineer specializing in Next.js web applications. I design and build modern web platforms using Next.js App Router, SSR, and API routes, supported by React, TypeScript, Node.js APIs, and cloud database infrastructure.",
     "profileImage": "/profile.webp",
     "email": "hello@aaravmehta.dev",
     "github": "https://github.com",
@@ -14,40 +14,40 @@
   "education": [
     {
       "level": "B.E. • Information Technology",
-      "institution": "Westford College of Engineering",
+      "institution": "BITS Pilani (Birla Institute of Technology & Science)",
       "year": "2017",
       "type": "undergraduate"
     },
     {
-      "level": "M.Tech • Computer Science",
-      "institution": "Ashcroft University",
+      "level": "M.Tech • Computer Science & Engineering",
+      "institution": "IIT Bombay (Indian Institute of Technology Bombay)",
       "year": "2019",
       "type": "postgraduate"
     }
   ],
   "experience": [
     {
-      "position": "Freelance Software Developer",
-      "company": "Independent Studio",
+      "position": "Full-Stack Software Developer",
+      "company": "Independent Engineering Studio",
       "joiningYear": "2019",
       "type": "freelance",
-      "description": "Running a one-person studio for early-stage startups, scoping the work, standing up the backend and frontend, wiring integrations, and shipping to production, then staying on to maintain and improve what I build."
+      "description": "Designing and delivering full-stack Next.js applications, building API architectures, configuring databases, and managing production deployments."
     }
   ],
   "skills": {
     "primary": {
       "name": "Next.js",
-      "description": "Modern Full-Stack Apps",
+      "description": "Full-Stack Web Architecture & App Router",
       "icon": "nextjs"
     },
     "secondary": [
       {
-        "name": "React.js",
-        "icon": "react"
-      },
-      {
         "name": "TypeScript",
         "icon": "typescript"
+      },
+      {
+        "name": "React.js",
+        "icon": "react"
       },
       {
         "name": "PostgreSQL",
@@ -91,25 +91,25 @@
   },
   "services": [
     {
-      "title": "Product Engineering",
-      "description": "I take web products from a first sketch to a live launch, architecture, interface, and everything between, built to feel fast and stay easy to maintain.",
+      "title": "Next.js Full-Stack Development",
+      "description": "Building full-stack web applications with Next.js App Router, server-side rendering, and efficient client-side interactions.",
       "icon": "palette",
       "features": [
-        "Idea-to-Launch Builds",
-        "Responsive Interfaces",
-        "Speed & Optimization",
-        "Maintainable Codebase"
+        "Server Components & App Router",
+        "Server-Side Rendering (SSR / SSG)",
+        "Performance & SEO Optimization",
+        "Full-Stack Integration"
       ]
     },
     {
-      "title": "Backend & API Development",
-      "description": "Solid server foundations, well-structured APIs, sensible data models, and secure deployments ready for the cloud.",
+      "title": "Backend API & Database Design",
+      "description": "Designing structured REST/GraphQL APIs, relational database schemas, authentication systems, and cloud deployments.",
       "icon": "lightbulb",
       "features": [
         "REST & GraphQL APIs",
-        "Data Modeling",
-        "Auth & Security",
-        "Cloud-Ready Deploys"
+        "PostgreSQL & Prisma Data Models",
+        "Authentication & Security",
+        "Cloud Deployment Pipelines"
       ]
     }
   ],
@@ -118,7 +118,7 @@
       {
         "name": "Plateful",
         "description": "A recipe-discovery app with a weekly meal planner and an auto-generated shopping list.",
-        "techStack": ["React.js", "Node.js", "MongoDB"],
+        "techStack": ["Next.js", "React.js", "Node.js", "MongoDB"],
         "category": "Lifestyle",
         "image": "/project-plateful.svg",
         "features": [
@@ -133,7 +133,7 @@
       {
         "name": "Trailhead",
         "description": "A habit and goal tracker that keeps you moving with streaks, reminders, and progress charts.",
-        "techStack": ["React.js", "Express", "Redis"],
+        "techStack": ["Next.js", "React.js", "Express", "Redis"],
         "category": "Productivity",
         "image": "/project-trailhead.svg",
         "status": "Live",
@@ -151,7 +151,7 @@
       {
         "name": "Ledgerly",
         "description": "An invoicing and expense platform for freelancers, with client billing, tax summaries, and payment tracking.",
-        "techStack": ["React.js", "Node.js", "PostgreSQL", "Docker"],
+        "techStack": ["Next.js", "React.js", "Node.js", "PostgreSQL", "Docker"],
         "category": "FinTech",
         "image": "/project-ledgerly.svg",
         "status": "Live",
@@ -178,40 +178,40 @@
       }
     ]
   },
-  "availability": "I'm taking on a couple of new projects this quarter. If you're building something, or want to breathe new life into an existing app, let's set up a chat.",
+  "availability": "Currently open for select full-stack Next.js development projects and technical consultancies.",
   "sections": {
     "about": {
       "title": "Who I",
       "titleAccent": "Am",
-      "subtitle": "A quick look at my background, what I focus on, and how I work.",
-      "storyHeading": "A Little Background",
-      "timelineHeading": "My Journey"
+      "subtitle": "Background, engineering focus, and core technical expertise.",
+      "storyHeading": "Background & Approach",
+      "timelineHeading": "Experience & Education"
     },
     "skills": {
-      "title": "My",
+      "title": "Technical",
       "titleAccent": "Toolkit",
-      "subtitle": "The technologies I reach for to design and ship web applications.",
-      "additionalHeading": "Also In My Toolbox"
+      "subtitle": "Primary technologies and supporting development tools.",
+      "additionalHeading": "Supporting Tools & Ecosystem"
     },
     "services": {
-      "title": "How I Can",
-      "titleAccent": "Help",
-      "subtitle": "Focused ways I can move your product forward, end to end.",
-      "includedHeading": "What You Get:"
+      "title": "Engineering",
+      "titleAccent": "Services",
+      "subtitle": "Full-stack development, Next.js architecture, and API integration.",
+      "includedHeading": "Key Deliverables:"
     },
     "portfolio": {
       "title": "Selected",
-      "titleAccent": "Work",
-      "subtitle": "A few projects that show how I think and what I can ship.",
-      "tabPersonal": "Personal Projects",
+      "titleAccent": "Projects",
+      "subtitle": "Full-stack web applications built with modern tools and performance focus.",
+      "tabPersonal": "Independent Projects",
       "tabClient": "Client Work"
     },
     "contact": {
-      "title": "Let's",
-      "titleAccent": "Connect",
-      "subtitle": "Have a project in mind, or just want to say hello? My inbox is open.",
-      "infoHeading": "Ways To Reach Me",
-      "availabilityHeading": "Where & When"
+      "title": "Get In",
+      "titleAccent": "Touch",
+      "subtitle": "Interested in working together or discussing a project? Send a message below.",
+      "infoHeading": "Contact Information",
+      "availabilityHeading": "Location & Availability"
     }
   }
 }

@@ -105,7 +105,7 @@ export const PortfolioSection = () => {
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground flex-1 h-9"
             >
               <FaGithub className="h-4 w-4" />
-              View Code
+              Source Code
             </button>
           </div>
         )}
@@ -114,7 +114,7 @@ export const PortfolioSection = () => {
   );
 
   return (
-    <section id="portfolio" className="py-20 bg-secondary/10">
+    <section id="portfolio" className="py-24 bg-card/40 border-y border-border/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -193,7 +193,7 @@ export const PortfolioSection = () => {
             }}
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary hover:bg-primary hover:text-primary-foreground hover-lift h-11 px-8"
           >
-            Start a Conversation
+            Discuss a Project
             <HiExternalLink className="h-5 w-5" />
           </button>
         </div>

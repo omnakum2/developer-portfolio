@@ -26,7 +26,7 @@ export const ServicesSection = () => {
   };
 
   return (
-    <section id="services" className="py-20 bg-background">
+    <section id="services" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -37,11 +37,11 @@ export const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto items-stretch">
           {services.map((service, index) => (
             <div 
               key={service.title} 
-              className={`rounded-lg border bg-card text-card-foreground shadow-sm card-elevated transition-smooth group ${
+              className={`rounded-xl border bg-card text-card-foreground shadow-sm card-elevated transition-smooth group flex flex-col justify-between h-full ${
                 index === 0 ? 'animate-fade-in-left' : 'animate-fade-in-right'
               }`}
             >
@@ -91,7 +91,7 @@ export const ServicesSection = () => {
             onClick={scrollToContact}
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary hover:bg-primary hover:text-primary-foreground hover-lift h-11 px-8"
           >
-            Schedule a Consultation
+            Contact for Project Enquiries
             <HiArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
